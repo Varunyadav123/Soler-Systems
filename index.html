@@ -1557,6 +1557,8 @@
 
             .content-section {
                 padding: 45px 55px;
+                max-width: 1440px;
+                margin: 0 auto;
             }
 
             .section-title {
@@ -1566,6 +1568,24 @@
             .services-grid {
                 grid-template-columns: repeat(3, 1fr);
                 gap: 18px;
+            }
+
+            .solar-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 14px;
+            }
+
+            .calculator-grid {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+                align-items: end;
+            }
+
+            .calculator-submit {
+                grid-column: 1 / -1;
+            }
+
+            .result-grid {
+                grid-template-columns: repeat(6, minmax(0, 1fr));
             }
 
             .service-card {
@@ -1734,16 +1754,8 @@
         }
 
         @media (min-width: 860px) {
-            .services-grid {
-                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            }
-
-            .solar-grid {
-                grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            }
-
             .process-grid {
-                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                grid-template-columns: repeat(4, minmax(0, 1fr));
             }
 
             .enquiry-grid {
