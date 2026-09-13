@@ -1,0 +1,12 @@
+{
+  "name": "my-solar-services",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Solar services frontend and enquiry backend",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
